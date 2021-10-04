@@ -1,6 +1,6 @@
 {
-  "name": "material-ui",
-  "version": "0.0.0",
+  "name": "most-react-hooks",
+  "version": "1.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
