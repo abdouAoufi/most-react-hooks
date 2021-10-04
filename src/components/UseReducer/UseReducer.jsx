@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 ===================================================
 
 In this file we will learn about useReducer hook ..
-useReducer is usally preferable to useState in some cases. when you have complex stat logic
+useReducer is usally preferable to useState in some cases. when you have complex state logic
 to change with one action ..
 
 ## implementation : 
@@ -45,7 +45,7 @@ const reducer = (state, action) => {
   }
 };
 
-function UseMemo() {
+function UseReducer() {
   const [authState, dispatch] = useReducer(reducer, initilaState);
 
   /* 
@@ -109,4 +109,4 @@ function UseMemo() {
   );
 }
 
-export default UseMemo;
+export default UseReducer;
