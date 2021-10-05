@@ -11,7 +11,7 @@ It's UI based hook. set up UI before fetching data for example.
 (use effect load after the page is rendred ) but use layout works before
 2 - We create an input and bind it with reference then when we access the value 
 from the use layout effect we see the first value even though the useeffect update
-the value. So we can say that useLayoutEffect is acceble before useEffect
+the value. So we can say that useLayoutEffect is running before useEffect
  
 
 
