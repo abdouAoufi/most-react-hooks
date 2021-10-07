@@ -12,7 +12,7 @@ so we need something to be in the child which is forwardRef.
 1 - We create child component and we want to run a function that is inside that component.
 2 - In order to do that we need reference to that child component but the problem as we said before 
 we can't use  ref with JSX so we used forwardRef in child cmp.
-3 - After the we defined our hook useImperativeHandle which accept the ref as argument and return a function.
+3 - Then the we defined our hook useImperativeHandle which accept the ref as argument and return a function.
 4 - That function being returned from the child. Now we can access it from the parent component
 
 !Check out the child component
