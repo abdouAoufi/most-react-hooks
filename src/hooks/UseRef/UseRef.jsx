@@ -29,12 +29,9 @@ Abderahmane Aoufi GitHub 2021
 
 import React, { useRef } from "react";
 import Box from "@mui/material/Box";
-import { AppBar } from "@mui/material";
-import { Toolbar } from "@mui/material";
-import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import Navbar from "../Navbar/Navbar";
 
 function UseRef() {
   const nameTextField = useRef(null);
@@ -47,25 +44,7 @@ function UseRef() {
   };
   return (
     <Box>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            aria-label="menu"
-            color="inherit"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography flexGrow={1} variant="h6" component="div">
-            Use ref
-          </Typography>
-          <Button sx={{ fontWeight: "bold" }} color="inherit">
-            Get started
-          </Button>
-        </Toolbar>
-      </AppBar>
+      <Navbar />
 
       <Typography
         textAlign="center"
@@ -94,7 +73,7 @@ function UseRef() {
         <Button
           onClick={diplayName}
           variant="contained"
-          sx={{  fontWeight: "bold" }}
+          sx={{ fontWeight: "bold" }}
         >
           display name
         </Button>

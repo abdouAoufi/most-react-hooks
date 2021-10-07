@@ -3,9 +3,10 @@ import Box from "@mui/material/Box";
 import { AppBar } from "@mui/material";
 import { Toolbar } from "@mui/material";
 import { IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import MenuIcon from "@mui/icons-material/Home";
 import { Button } from "@mui/material ";
 import { Typography } from "@mui/material ";
+import { Link } from "react-router-dom";
 
 function Navbar({ hook, onClick, btnText }) {
   return (
@@ -18,7 +19,9 @@ function Navbar({ hook, onClick, btnText }) {
             sx={{ mx: 1 }}
             color="inherit"
           >
-            <MenuIcon />
+            <Link to="/">
+              <MenuIcon />
+            </Link>
           </IconButton>
           <Typography
             sx={{ flexGrow: 1 }}

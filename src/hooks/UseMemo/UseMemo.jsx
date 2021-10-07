@@ -23,6 +23,7 @@ Aoufi Abderahmane GitHub 2021
 import React, { useState, useMemo } from "react";
 import { Button } from "@mui/material";
 import { Box } from "@mui/system";
+import Navbar from "../Navbar/Navbar";
 
 function UseMemo() {
   const [toggle, setToggle] = useState(false);
@@ -34,26 +35,29 @@ function UseMemo() {
   };
   const getComputationResult = useMemo(() => doHardComputation(), []);
   return (
-    <Box
-      component="div"
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        mt: 4,
-        flexDirection: "column",
-        placeItems: "center",
-      }}
-    >
-      <div>{getComputationResult}</div>
-      <Button
-        onClick={() => setToggle(!toggle)}
-        variant="contained"
-        size="large"
+    <>
+      <Navbar />
+      <Box
+        component="div"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          mt: 4,
+          flexDirection: "column",
+          placeItems: "center",
+        }}
       >
-        Alter
-      </Button>
-      {toggle && <h1>I'm intressted in toggle state but not on algorithm</h1>}
-    </Box>
+        <div>{getComputationResult}</div>
+        <Button
+          onClick={() => setToggle(!toggle)}
+          variant="contained"
+          size="large"
+        >
+          Alter
+        </Button>
+        {toggle && <h1>I'm intressted in toggle state but not on algorithm</h1>}
+      </Box>
+    </>
   );
 }
 

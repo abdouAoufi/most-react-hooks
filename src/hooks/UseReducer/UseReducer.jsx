@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 /*
 ===================================================
@@ -84,7 +85,9 @@ function UseReducer() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            <Link to="/">
+              <MenuIcon />
+            </Link>
           </IconButton>
           <Typography
             variant="h6"

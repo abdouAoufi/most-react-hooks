@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import UseReducer from "./components/UseReducer/UseReducer";
-import UseRef from "./components/UseRef/UseRef";
-import UseLyout from "./components/UseLayout/UseLayout";
-import UseMemo from "./components/UseMemo";
-import UseImperativeLayout from "./components/UseImperativeHandle/UseImperativeHandle";
+import UseReducer from "./hooks/UseReducer/UseReducer";
+import UseRef from "./hooks/UseRef/UseRef";
+import UseLyout from "./hooks/UseLayout/UseLayout";
+import UseMemo from "./hooks/UseMemo";
+import Welcome from "./Welcome";
+import UseImperativeLayout from "./hooks/UseImperativeHandle/UseImperativeHandle";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Route path="/use-layout" component={UseLyout} />
         <Route path="/use-imperative" component={UseImperativeLayout} />
         <Route path="/use-memo" component={UseMemo} />
+        <Route path="/" component={Welcome} />
       </Switch>
     </Router>
   </React.StrictMode>,
